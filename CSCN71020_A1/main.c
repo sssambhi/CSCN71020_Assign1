@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void printWelcomeMenu();
 void printOptions();
@@ -21,9 +22,7 @@ void main() {
 	{
 	case 1:
 		add();
-	}
-	switch (inputNum)
-	{
+
 	case 2:
 		subtract();
 	}
@@ -52,7 +51,7 @@ void add() {
 	printf("%lf + %lf = %lf\n", num1, num2, result);
 }
 
-void subtract(void) {
+void subtract() {
 	double num1, num2, result;
 	printf("Enter the first value:");
 	scanf_s("%lf", &num1);
